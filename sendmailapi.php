@@ -1,4 +1,5 @@
 <?php
+
 require 'PHPMailer/src/PHPMailer.php'; // Adjust path if necessary
 require 'PHPMailer/src/SMTP.php'; // Adjust path if necessary
 require 'PHPMailer/src/Exception.php'; // Adjust path if necessary
