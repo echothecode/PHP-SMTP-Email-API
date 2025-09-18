@@ -10,6 +10,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
 
+a
 // Set content type to JSON
 header('Content-Type: application/json');
 
