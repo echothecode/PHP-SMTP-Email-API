@@ -61,7 +61,7 @@ if (!isset($_GET['code']) && !isset($_POST['provider'])) {
     <label for="providerMicrosoft">Microsoft</label><br>
     <input type="radio" name="provider" value="Azure" id="providerAzure">
     <label for="providerAzure">Azure</label><br>
-    <h1>Enter id and secret</h1>
+    <h1>Enter ids and secret</h1>
     <p>These details are obtained by setting up an app in your provider's developer console.
     </p>
     <p>ClientId: <input type="text" name="clientId"><p>
