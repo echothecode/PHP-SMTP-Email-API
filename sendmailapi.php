@@ -10,18 +10,14 @@ use PHPMailer\PHPMailer\Exception;
 
 
 
+<<<<<<< HEAD
 //b//
 // test conflict
+=======
+//b
+>>>>>>> parent of 0bc5da1... add comment main
 // Set content type to JSON
-header('Content-Type: ar_dump([$to, $subject, $message]));
-    try {
-        $mail->isSMTP(); // Use SMTP
-        $mail->SMTPDebug = 2; // Set to 2 for detailed debug output
-        $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->SMTPSecure = 'ssl'; // Use SSL
-        $mail->Host = 'hostyourdomain.com'; //  SMTP server
-        $mail->Port = 465; //  SMTP port
-        $mail->Username =pplication/json');
+header('Content-Type: application/json');
 
 // Function to send email
 function sendEmail($to, $subject, $message, $attachment = null) {
@@ -30,26 +26,10 @@ function sendEmail($to, $subject, $message, $attachment = null) {
     try {
         $mail->isSMTP(); // Use SMTP
         $mail->SMTPDebug = 2; // Set to 2 for detailed debug output
-        $mail->SMTr_dump([$to, $subject, $message]));
-        try {
-            $mail->isSMTP(); // Use SMTP
-            $mail->SMTPDebug = 2; // Set to 2 for detailed debug output
-            $mail->SMTPAuth = true; // Enable SMTP authentication
-            $mail->SMTPSecure = 'ssl'; // Use SSL
-            $mail->Host = 'hostyourdomain.com'; //  SMTP server
-            $mail->Port = 465; //  SMTP port
-            $mail->Username =PAuth = true; // Enable SMTP authentication
+        $mail->SMTPAuth = true; // Enable SMTP authentication
         $mail->SMTPSecure = 'ssl'; // Use SSL
         $mail->Host = 'hostyourdomain.com'; //  SMTP server
-        $mail->Porr_dump([$to, $subject, $message]));
-        try {
-            $mail->isSMTP(); // Use SMTP
-            $mail->SMTPDebug = 2; // Set to 2 for detailed debug output
-            $mail->SMTPAuth = true; // Enable SMTP authentication
-            $mail->SMTPSecure = 'ssl'; // Use SSL
-            $mail->Host = 'hostyourdomain.com'; //  SMTP server
-            $mail->Port = 465; //  SMTP port
-            $mail->Username =t = 465; //  SMTP port
+        $mail->Port = 465; //  SMTP port
         $mail->Username = 'no-reply@yourdomain.com'; // Your  address
         $mail->Password = 'yourpassword'; // Your app password
 
@@ -61,15 +41,7 @@ function sendEmail($to, $subject, $message, $attachment = null) {
         $mail->isHTML(true); // Set email format to HTML
 
         $htmlContent = $message;
-        r_dump([$to, $subject, $message]));
-        try {
-            $mail->isSMTP(); // Use SMTP
-            $mail->SMTPDebug = 2; // Set to 2 for detailed debug output
-            $mail->SMTPAuth = true; // Enable SMTP authentication
-            $mail->SMTPSecure = 'ssl'; // Use SSL
-            $mail->Host = 'hostyourdomain.com'; //  SMTP server
-            $mail->Port = 465; //  SMTP port
-            $mail->Username =
+
         $mail->Body = $htmlContent; // HTML body content
 
         // Handle attachment
@@ -84,15 +56,7 @@ function sendEmail($to, $subject, $message, $attachment = null) {
         $mail->send();
         return ['success' => true, 'message' => 'Email sent successfully'];
     } catch (Exception $e) {
-        return ['sucr_dump([$to, $subject, $message]));
-    try {
-        $mail->isSMTP(); // Use SMTP
-        $mail->SMTPDebug = 2; // Set to 2 for detailed debug output
-        $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->SMTPSecure = 'ssl'; // Use SSL
-        $mail->Host = 'hostyourdomain.com'; //  SMTP server
-        $mail->Port = 465; //  SMTP port
-        $mail->Username =cess' => false, 'message' => 'Email sending failed: ' . $mail->ErrorInfo];
+        return ['success' => false, 'message' => 'Email sending failed: ' . $mail->ErrorInfo];
     }
 }
 
@@ -101,15 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get JSON input
     $input = json_decode(file_get_contents('php://input'), true);
     if (isset($input['to'], $input['subject'], $input['message'])) {
-        $attar_dump([$to, $subject, $message]));
-        try {
-            $mail->isSMTP(); // Use SMTP
-            $mail->SMTPDebug = 2; // Set to 2 for detailed debug output
-            $mail->SMTPAuth = true; // Enable SMTP authentication
-            $mail->SMTPSecure = 'ssl'; // Use SSL
-            $mail->Host = 'hostyourdomain.com'; //  SMTP server
-            $mail->Port = 465; //  SMTP port
-            $mail->Username =chment = isset($input['attachment']) ? $input['attachment'] : null;
+        $attachment = isset($input['attachment']) ? $input['attachment'] : null;
         $response = sendEmail($input['to'], $input['subject'], $input['message'],$attachment);
     } else {
         $response = ['success' => false, 'message' => 'Missing required fields'];
