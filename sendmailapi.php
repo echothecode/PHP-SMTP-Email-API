@@ -11,6 +11,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
 //b//
+// test conflict
 // Set content type to JSON
 header('Content-Type: application/json');
 
