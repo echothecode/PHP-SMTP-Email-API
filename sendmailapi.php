@@ -28,7 +28,7 @@ function sendEmail($to, $subject, $message, $attachment = null) {
         $mail->addAddress($to); // Recipient
 
         $mail->Subject = $subject;
-        $mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';
+        $mail->AltBody = 'To view the message, please use an HTML compatible email viewer! ';
         $mail->isHTML(true); // Set email format to HTML
 
         $htmlContent = $message;
