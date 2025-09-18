@@ -10,12 +10,7 @@ use PHPMailer\PHPMailer\Exception;
 
 
 
-<<<<<<< HEAD
 //b//
-// test conflict
-=======
-//b
->>>>>>> parent of 0bc5da1... add comment main
 // Set content type to JSON
 header('Content-Type: application/json');
 
