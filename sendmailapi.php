@@ -24,7 +24,7 @@ function sendEmail($to, $subject, $message, $attachment = null) {
         $mail->Username = 'no-reply@yourdomain.com'; // Your  address
         $mail->Password = 'yourpassword'; // Your app password
 
-        $mail->setFrom('no-reply@yourdomain.com', 'no-reply@yourdomain.com'); // Sender
+        $mail->setFrom('no-reply@yourdomains.com', 'no-reply@yourdomains.com'); // Sender
         $mail->addAddress($to); // Recipient
 
         $mail->Subject = $subject;
