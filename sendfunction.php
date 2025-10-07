@@ -1,5 +1,5 @@
 <?php
-//try comment
+//try comment ..
 	function sendMail($to, $subject, $message, $attachment = array())
     {
 
